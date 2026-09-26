@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+
+    <!-- ANCHOR: Create a link to another website -->
+    <!-- <a>About the Odin Project</a> : Did not lead anywhere since we do not have a link to reference -->
+
+    <!-- HYPERTEXT REFERENCE: Value of the href attribute is the destination we want our link to go -->
+    Open in current tab: 
+    <a href="https://www.theodinproject.com/about">About the Odin Project</a>
+
+    <br>
+    
+    <!-- TARGET: Specifies where the linked resourse will be opened -->
+    <!-- Use _blank as target value to open in new tab  -->
+    <!-- Otherwise, opens in current tab with deafult _self target value -->
+    Open in new tab:
+    <a href="https://www.theodinproject.com/about" target="_blank">About the Odin Project</a>
+    
+    <br>
+    
+    <!-- RELATION: Describes relation between current page and the linked document -->
+    <!-- noopener: Prevents new tab from accessing the original page. Modern browsers all set this automatically for any links that have _blank as the target value -->
+    <!-- noreferrer: Same as noopener but also prevents certain details about the original page from being passed to the new page -->
+    Same as link above, just with relation value:
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noreferrer">About the Odin Project</a>
+
+    <br>
+
+    <!-- RELATIVE LINKS: Links to other pages within our own website -->
+    <a href="./pages/about.html">About</a>
+
+    <br>
+
+    <!-- IMAGE: Display an image -->
+    <!-- Can use absolute path to link to an online photo -->
+    <!-- ALT: Used to describe an image, which will be used in place of image if it cannot be loaded -->
+    <!-- IMAGE SIZE: Specify dimensions of images with height and width attributes -->
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+    
+    <br>
+    
+    <!-- Can also use relative path if image file is available -->
+    <img src="./images/dog.jpg" alt="Photo of pug" height="310" width="310">
+
+</body>
+</html>
